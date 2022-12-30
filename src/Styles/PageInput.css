@@ -1,0 +1,69 @@
+.PageInputContainer {
+    background-color: white;
+    border: 1px solid #ccc;
+    /* centrar */
+    margin: 0 auto;
+    /* Tamaño cuadrado*/
+    width: 80%;
+    max-width: 500px;
+    /* Darle su espacio*/
+    padding: 20px;
+}
+
+.PageInputContainer h1,
+.PageInputContainer h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.PageInputContainer .InputBasicos,
+.PageInputContainer .InputHelper,
+.PageInputContainer .InputIcons,
+.PageInputContainer .inputColor,
+.PageInputContainer .inputMultiline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.PageInputContainer .InputBasicos h2,
+.PageInputContainer .InputHelper h2,
+.PageInputContainer .InputIcons h2,
+.PageInputContainer .inputColor h2,
+.PageInputContainer .inputMultiline h2 {
+    width: 150px;
+}
+
+.PageInputContainer .InputBasicos .Input,
+.PageInputContainer .InputHelper .Input,
+.PageInputContainer .InputIcons .Input,
+.PageInputContainer .inputColor .Input,
+.PageInputContainer .inputMultiline .Input {
+    width: 200px;
+    margin: 0 10px;
+}
+
+
+
+
+.PageInputContainer .inputColor .Input {
+    width: 200px;
+    margin: 0 10px;
+}
+
+.PageInputContainer .inputColor .Input.primary {
+    background-color: blue;
+    color: white;
+}
+
+.PageInputContainer .inputColor .Input.secondary {
+    background-color: green;
+    color: white;
+}
+
+.PageInputContainer .inputMultiline .Input {
+    width: 100%;
+    height: 100px;
+}
