@@ -1,12 +1,14 @@
 import React from 'react'
-import Input from './Input'
+import  Input  from './Input';
+import { FaBeer } from 'react-icons/fa';
+
 import './../Styles/PageInput.css'
 
 export const PageImput = () => {
     return (
         <>
             <div className='PageInputContainer'>
-                <h1>Input</h1>
+                <h1>Inputs <FaBeer/> </h1>
                 <div>
                     <div className='InputBasicos'>
                         <h2>Default</h2>
@@ -26,8 +28,10 @@ export const PageImput = () => {
 
                     <div className='InputIcons'>
                         <h2>icon</h2>
-                        <Input icon="left" />
-                        <Input icon="right" />
+                        <Input icon={<FaBeer />} iconPosition="left" />
+                        <Input icon={<FaBeer />} iconPosition="right" />
+                        <Input icon={<FaBeer />} iconPosition="left" />
+                        
                     </div>
                     
                     <div className='inputSize'>
@@ -47,7 +51,7 @@ export const PageImput = () => {
 
                     <div className='inputMultiline'>
                         <h2>multiline</h2>
-                        <Input multiline={true} />
+                        <Input multiline={true} maxRows={4} />
                     </div>
                 </div>
             </div>

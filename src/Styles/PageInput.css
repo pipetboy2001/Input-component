@@ -5,7 +5,7 @@
     margin: 0 auto;
     /* Tamaño cuadrado*/
     width: 80%;
-    max-width: 500px;
+    max-width: 80%;
     /* Darle su espacio*/
     padding: 20px;
 }
@@ -16,9 +16,7 @@
     margin: 10px 0;
 }
 
-.PageInputContainer .InputBasicos,
-.PageInputContainer .InputHelper,
-.PageInputContainer .InputIcons,
+
 .PageInputContainer .inputColor,
 .PageInputContainer .inputMultiline {
     display: flex;
@@ -45,9 +43,6 @@
     margin: 0 10px;
 }
 
-
-
-
 .PageInputContainer .inputColor .Input {
     width: 200px;
     margin: 0 10px;
@@ -63,7 +58,3 @@
     color: white;
 }
 
-.PageInputContainer .inputMultiline .Input {
-    width: 100%;
-    height: 100px;
-}

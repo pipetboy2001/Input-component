@@ -1,25 +1,28 @@
-import React from 'react'
-import './../Styles/Input.css'
+import classnames from 'classnames';
+import './../Styles/Input.css';
 
-function Input(props) {
-    const { error, disabled, helperText, icon, size, color, fullWidth, multiline } = props;
-    let className = `input ${error ? "error" : ""} ${disabled ? "disabled" : ""} ${fullWidth ? "full-width" : ""} ${multiline ? "multiline" : ""}`;
-    if (size) {
-        className += ` size-${size}`;
-    }
-    if (color) {
-        className += ` color-${color}`;
-    }
+export default function Input(props) {
+    const { error, disabled, helperText, icon,iconPosition, size, color, fullWidth, multiline ,maxRows} = props;
+    const className = classnames(
+        'input',
+        error && 'error',
+        disabled && 'disabled',
+        size && `size-${size}`,
+        color && `color-${color}`,
+        fullWidth && 'full-width',
+        multiline && 'multiline',
+        icon && `icon-${icon}`
+    );
+
     return (
         <>
             {multiline ? (
-                <textarea className={className} {...props} />
+                <textarea className={className} maxRows={maxRows} {...props} />
             ) : (
                 <input className={className} {...props} />
             )}
             {helperText && <div className="helper-text">{helperText}</div>}
+            
         </>
     );
 }
-
-export default Input;
