@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Input from './../Components/Input'
 
 import { FaBeer } from 'react-icons/fa';
@@ -12,6 +12,18 @@ import { BsInputCursorText } from 'react-icons/bs';
 import './../Styles/PageInput.css'
 
 export const PageImput = () => {
+    const [variant, setVariant] = useState('default');
+    const [disabled, setDisabled] = useState(false);
+    const [color, setColor] = useState('default');
+    const [size, setSize] = useState('md');
+    const [shadow, setShadow] = useState(true);
+    const [fullWidth, setFullWidth] = useState(false);
+    const [icon, setIcon] = useState(false);
+    const [iconPosition, setIconPosition] = useState('left');
+    const [error, setError] = useState(false);
+    const [helperText, setHelperText] = useState('');
+    const [multiline, setMultiline] = useState(false);
+
     return (
         <>
             <div className='PageInputContainer'>
@@ -60,6 +72,42 @@ export const PageImput = () => {
                         <Input multiline={true} maxRows={4} placeholder="Input multilinea" />
                     </div>
                 </div>
+
+                <h1>Modificable</h1>
+                <div >
+                    < Input size={size} color={color} disabled={disabled} error={error} />
+                </div>
+                <label>
+                    Tamaño:
+                    <select value={size} onChange={event => setSize(event.target.value)}>
+                        <option value="sm">Small</option>
+                        <option value="md">Medium</option>
+                        <option value="lg">Large</option>
+                    </select>
+                </label>
+                <label>
+                    Color:
+                    <select value={color} onChange={event => setColor(event.target.value)}>
+                        <option value="default">Default</option>
+                        <option value="primary">Primary</option>
+                        <option value="secondary">Secondary</option>
+                    </select>
+                </label>
+                <label>
+                    Deshabilitado:
+                    <input type="checkbox" checked={disabled} onChange={event => setDisabled(event.target.checked)} />
+                </label>
+                <label>
+                    Error:
+                    <input type="checkbox" checked={error} onChange={event => setError(event.target.checked)} />
+                </label>
+                <label>
+                    HelperText:
+                    <input type="text" value={helperText} onChange={event => setHelperText(event.target.value)} />
+                </label>
+
+
+
             </div>
         </>
     )
