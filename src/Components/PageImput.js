@@ -75,7 +75,7 @@ export const PageImput = () => {
 
                 <h1>Modificable</h1>
                 <div >
-                    < Input size={size} color={color} disabled={disabled} error={error} />
+                    < Input placeholder="Modificame!" size={size} color={color} disabled={disabled} error={error} />
                 </div>
                 <label>
                     Tamaño:
@@ -101,11 +101,6 @@ export const PageImput = () => {
                     Error:
                     <input type="checkbox" checked={error} onChange={event => setError(event.target.checked)} />
                 </label>
-                <label>
-                    HelperText:
-                    <input type="text" value={helperText} onChange={event => setHelperText(event.target.value)} />
-                </label>
-
 
 
             </div>
