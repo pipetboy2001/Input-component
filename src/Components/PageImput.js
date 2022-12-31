@@ -4,7 +4,6 @@ import Input from './../Components/Input'
 import { FaBeer } from 'react-icons/fa';
 import { BiError } from 'react-icons/bi';
 import { MdDisabledByDefault } from 'react-icons/md';
-import { FaHireAHelper } from 'react-icons/fa';
 import { GiResize } from 'react-icons/gi';
 import { CgDisplayFullwidth } from 'react-icons/cg';
 import { BsInputCursorText } from 'react-icons/bs';
@@ -12,17 +11,10 @@ import { BsInputCursorText } from 'react-icons/bs';
 import './../Styles/PageInput.css'
 
 export const PageImput = () => {
-    const [variant, setVariant] = useState('default');
     const [disabled, setDisabled] = useState(false);
     const [color, setColor] = useState('default');
     const [size, setSize] = useState('md');
-    const [shadow, setShadow] = useState(true);
-    const [fullWidth, setFullWidth] = useState(false);
-    const [icon, setIcon] = useState(false);
-    const [iconPosition, setIconPosition] = useState('left');
     const [error, setError] = useState(false);
-    const [helperText, setHelperText] = useState('');
-    const [multiline, setMultiline] = useState(false);
 
     return (
         <>
