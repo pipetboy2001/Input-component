@@ -1,5 +1,5 @@
 <div align="center">
-      <h1> <img src="" width="80px"><br/>Input Generator</h1></div>
+      <h1> <img src="" width="80px"><br/>Input Component</h1></div>
 
 <div align="center">
    solución para el  challenge de  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -10,11 +10,11 @@ Este es un proyecto que permite crear una serie de botones a partir de un compon
 
 <div align="center">
   <h3>
-    <a href="">
+    <a href="https://input-component-silk.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="">
+    <a href="https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp">
       Challenge
     </a>
   </h3>
@@ -24,7 +24,7 @@ Este es un proyecto que permite crear una serie de botones a partir de un compon
 
 
 ### Built With
- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
       
 
 ## Características
