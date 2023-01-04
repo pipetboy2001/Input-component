@@ -48,7 +48,7 @@ Para clonar y ejecutar esta aplicación, necesitará [Git](https://git-scm.com) 
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/pipetboy2001/...
+$ git clone https://github.com/pipetboy2001/Input-component
 
 # Install dependencies
 $ npm install
